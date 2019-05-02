@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CallCenter">
+    <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="@color/colorAccent"
+            style="@style/card_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="Emergency Contact"
+                  android:textAlignment="center"
+        />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ListView
+            android:id="@+id/list_telp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

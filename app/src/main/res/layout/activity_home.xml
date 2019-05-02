@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home">
+
+    <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/profille_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_outline_black_24dp"
+    />
+
+    <GridLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:columnCount="2"
+            android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/seputar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="@style/card_grid"
+                android:background="@drawable/health"
+        >
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heartbeat"
+                        android:layout_weight="1"
+                />
+                <TextView android:layout_width="match_parent"
+                          android:textAlignment="center"
+                          android:text="Seputar \n Henti Jantung"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/penanganan"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="@style/card_grid"
+                android:background="@drawable/health"
+        >
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/doctor"
+                        android:layout_weight="1"
+                />
+                <TextView android:layout_width="match_parent"
+                          android:textAlignment="center"
+                          android:text="Penanganan \n Henti Jantung"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/emergency_contact"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="@style/card_grid"
+                android:background="@drawable/health"
+        >
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call"
+                        android:layout_weight="1"
+                />
+                <TextView android:layout_width="match_parent"
+                          android:textAlignment="center"
+                          android:text="Emergency \n Contact"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+                android:id="@+id/chatting"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                style="@style/card_grid"
+                android:background="@drawable/health"
+        >
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chat"
+                        android:layout_weight="1"
+                />
+                <TextView android:layout_width="match_parent"
+                          android:textAlignment="center"
+                          android:text="Chatting"
+                          android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
+
+</RelativeLayout>
